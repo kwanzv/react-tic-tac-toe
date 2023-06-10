@@ -1,0 +1,32 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  height: 150px;
+  width: 150px;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.square:hover {
+  background-color: #e0e0e0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 300px;
+  margin: 0 auto;
+  transform: translateX(-60px);
+}
